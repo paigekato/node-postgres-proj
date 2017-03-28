@@ -39,7 +39,7 @@ client.connect((error) => {
     if(error) {
       return console.error("Error running query", err);
     }
-  checkFamousPeople(results);
+    checkFamousPeople(results);
     client.end();
   });
 });
